@@ -94,6 +94,7 @@ h2 {
 figcaption {
   text-align: left;
   padding-top: 5px;
+  margin-bottom: 20px;
 }
 .pageSection {
   padding: 30px;
@@ -195,12 +196,37 @@ p {
   align-items: center;
   justify-content: space-around;
 }
+
+.flexbox-item:nth-child(1) {
+  order: 0;
+}
+.flexbox-item:nth-child(2) {
+  order: 1;
+}
+.flexbox-item:nth-child(3) {
+  order: 3;
+}
+.flexbox-item:nth-child(4) {
+  order: 2;
+}
+.flexbox-item:nth-child(5) {
+  order: 4;
+}
+.flexbox-item:nth-child(6) {
+  order: 5;
+}
+.flexbox-item:nth-child(7) {
+  order: 7;
+}
+.flexbox-item:nth-child(8) {
+  order: 6;
+}
+
 .article-content {
   width: 700px;
-  background-color: red;
 }
 .flexbox-item img {
-  width: 300px;
+  width: 250px;
 }
 /* Enkel de tekst */
 .flexbox-item {
@@ -267,4 +293,30 @@ p {
   top: 20px;
   left: 20px;
   width: 20%;
+}
+@media (max-width: 1013px) {
+  .flexbox-item:nth-child(1) {
+    order: 0;
+  }
+  .flexbox-item:nth-child(2) {
+    order: 1;
+  }
+  .flexbox-item:nth-child(3) {
+    order: 2;
+  }
+  .flexbox-item:nth-child(4) {
+    order: 3;
+  }
+  .flexbox-item:nth-child(5) {
+    order: 4;
+  }
+  .flexbox-item:nth-child(6) {
+    order: 5;
+  }
+  .flexbox-item:nth-child(7) {
+    order: 6;
+  }
+  .flexbox-item:nth-child(8) {
+    order: 7;
+  }
 }
