@@ -1,3 +1,7 @@
+<!-- 
+  Cards heb ik niet meer toegevoegd =/
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,49 +15,58 @@
   <body>
     <header id="header">
       <nav id="nav">
-        <a href="">
-          <img src="files/img/logo2_blur.png" id="logo" />
+        <a class="logo-btn" href="#">
+          <img
+            src="files/img/logo2_blur.png"
+            id="logo"
+            alt="The Pink Floyd's logo. A prism with light shining through resulting in beautiful rainbow colours"
+          />
         </a>
 
         <ul id="nav-menu">
-          <li><a class="nav-btn active" href="#">Home</a></li>
-          <li><a class="nav-btn" href="#section1">The band</a></li>
-          <li><a class="nav-btn" href="#section2">Gallery</a></li>
-          <li><a class="nav-btn" href="#section3">Albums</a></li>
-          <li><a class="nav-btn" href="#section4">Contact</a></li>
+          <li class="menu-item"><a class="nav-btn active" href="#">Home</a></li>
+          <li class="menu-item">
+            <a class="nav-btn" href="#section1">The band</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-btn" href="#section2">Gallery</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-btn" href="#section3">Albums</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-btn" href="#section4">Videos</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-btn" href="#section5">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <!-- <aside>
-        <img id="palette" src="files/img/color_palette2.png" alt="" />
-      </aside> -->
-      <!--Banner img roller-->
-      <div id="banner" class="pageSection">
-        <h1>Pink Floyd</h1>
+      <section id="banner" class="page-section">
+        <h1 class="banner-text">Pink Floyd</h1>
+        <blockquote class="band-quote">
+          “All in all, you're just another brick in the wall”
+        </blockquote>
         <a href="#section1" id="down-arrow"
-          ><img src="files/img/down-arrow.png"
+          ><img src="files/img/down-arrow.png" alt="down arrow"
         /></a>
-      </div>
+      </section>
       <!-- About-->
-      <div id="section1" class="pageSection">
-        <section class="center-frame">
-          <h1 class="sectionTitle">The band</h1>
-          <!-- 
-          <figure id="fig-members">
-            <img
-              id="full-band"
-              src="files/img/fullband.jpg"
-              alt="Old picture of all the members of Pink Floyd posing towards the camera."
-            />
-            <figcaption class="fig-caption-font">
-              Fig 1 - All the members of the band
-            </figcaption>
-          </figure> -->
 
-          <section class="flexbox-outer-row">
-            <figure class="flexbox-item">
+      <!-- benaming wijzigen-> band ofzo -->
+      <div id="section1" class="page-section">
+        <section class="center-frame">
+          <!-- 1 maal <h1> gebruiken of <h2> chronologisch -->
+          <h2 class="section-title">Band members</h2>
+
+          <!-- CLassnames semantischer maken bv band__title; band_content, band__description zoek om BEM names  -->
+
+          <!-- Row-> niet semantisch-> band_member -->
+          <div class="band__description__row">
+            <figure>
               <img
                 src="files/img/David-Gilmour.jpg"
                 class="img-members"
@@ -65,8 +78,9 @@
             </figure>
 
             <article class="flexbox-item article-content">
-              <h2>David Gilmour</h2>
-              <p>
+              <!-- h3 -->
+              <h3 class="band__description__title">David Gilmour</h3>
+              <p class="band__description__content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 voluptates cum minus placeat consequuntur aperiam odio id,
                 laudantium ullam, ipsum quos inventore eius, praesentium
@@ -77,8 +91,9 @@
                 doloremque dignissimos. Fugiat, est omnis!
               </p>
             </article>
-
-            <figure class="flexbox-item">
+          </div>
+          <div class="band__description__row">
+            <figure>
               <img
                 src="files/img/Roger-Waters.jpg"
                 class="img-members"
@@ -90,8 +105,8 @@
             </figure>
 
             <article class="flexbox-item article-content">
-              <h2>Roger Waters</h2>
-              <p>
+              <h3 class="band__description__title">Roger Waters</h3>
+              <p class="band__description__content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 voluptates cum minus placeat consequuntur aperiam odio id,
                 laudantium ullam, ipsum quos inventore eius, praesentium
@@ -102,8 +117,10 @@
                 doloremque dignissimos. Fugiat, est omnis!
               </p>
             </article>
+          </div>
 
-            <figure class="flexbox-item">
+          <div class="band__description__row">
+            <figure>
               <img
                 src="files/img/Richard-Wright.jpg"
                 class="img-members"
@@ -115,8 +132,8 @@
             </figure>
 
             <article class="flexbox-item article-content">
-              <h2>Richard Wright</h2>
-              <p>
+              <h3 class="band__description__title">Richard Wright</h3>
+              <p class="band__description__content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 voluptates cum minus placeat consequuntur aperiam odio id,
                 laudantium ullam, ipsum quos inventore eius, praesentium
@@ -127,8 +144,9 @@
                 doloremque dignissimos. Fugiat, est omnis!
               </p>
             </article>
-
-            <figure class="flexbox-item">
+          </div>
+          <div class="band__description__row">
+            <figure>
               <img
                 src="files/img/Nick-Mason.jpg"
                 class="img-members"
@@ -140,8 +158,8 @@
             </figure>
 
             <article class="flexbox-item article-content">
-              <h2>Nick Mason</h2>
-              <p>
+              <h3 class="band__description__title">Nick Mason</h3>
+              <p class="band__description__content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 voluptates cum minus placeat consequuntur aperiam odio id,
                 laudantium ullam, ipsum quos inventore eius, praesentium
@@ -152,57 +170,267 @@
                 doloremque dignissimos. Fugiat, est omnis!
               </p>
             </article>
-          </section>
+          </div>
         </section>
       </div>
 
-      <!-- Gallery-->
-      <div id="section2" class="pageSection">
+      <!-- Gallery gebruiken als id-->
+      <div id="section2" class="page-section">
         <section class="center-frame">
-          <h1 class="fat">Gallery</h1>
+          <h2 class="section-title">Gallery</h2>
 
+          <!-- CARDS toevoegen!! -->
           <section class="img-area">
-            <div class="single-image">
-              <img src="files/img/Nick-Mason.jpg" alt="" />
-            </div>
-            <div class="single-image">
-              <img src="files/img/David-Gilmour.jpg" alt="" />
-            </div>
-
-            <div class="single-image">
-              <img src="files/img/Richard-Wright.jpg" alt="" />
-            </div>
-            <div class="single-image">
-              <img src="files/img/Roger-Waters.jpg" alt="" />
-            </div>
-            <div class="single-image">
-              <img src="files/img/color_palette2.png" alt="" />
-            </div>
-            <div class="single-image">
-              <img src="files/img/logo.png" alt="" />
-            </div>
+            <figure class="single-image">
+              <img src="files/img/Nick-Mason.jpg" alt="Nick Mason Close-up" />
+            </figure>
+            <figure class="single-image">
+              <img
+                src="files/img/David-Gilmour.jpg"
+                alt="David Gilmour Close-up"
+              />
+            </figure>
+            <figure class="single-image">
+              <img
+                src="files/img/Richard-Wright.jpg"
+                alt="Richard-Wright Close-up"
+              />
+            </figure>
+            <figure class="single-image">
+              <img
+                src="files/img/Roger-Waters.jpg"
+                alt="Roger-Waters Close-up"
+              />
+            </figure>
+            <figure class="single-image">
+              <img
+                src="files/img/rogerAndGilmour.jpg"
+                alt="David-Gilmour and Roger-Waters together on stage"
+              />
+            </figure>
+            <figure class="single-image">
+              <img
+                src="files/img/Sydbarret.jpg"
+                alt="Syd Barret(the lost band member)"
+              />
+            </figure>
+            <figure class="single-image">
+              <img
+                src="files/img/nickMasonLive.jpg"
+                alt="Nick-Mason Close-up"
+              />
+            </figure>
+            <figure class="single-image">
+              <img
+                src="files/img/richWright.jpg"
+                alt="Richard-Wright Close-up"
+              />
+            </figure>
+            <figure class="single-image">
+              <img src="files/img/Gilmour2.jpg" alt="David-Gilmour Close-up" />
+            </figure>
+            <figure class="single-image">
+              <img
+                src="files/img/syd-barrett-2.jpg"
+                alt="Syd Barret(the lost band member)"
+              />
+            </figure>
           </section>
         </section>
       </div>
 
-      <!-- Albums-->
-      <div id="section3" class="pageSection">
+      <!-- Albums -->
+      <div id="section3" class="page-section">
         <section class="center-frame">
-          <h1 class="fat">Albums</h1>
+          <h2 class="section-title">Albums</h2>
+          <figure>
+            <img id="arrow" src="files/img/arrow.png" alt="arrow" />
+            <h4 id="arrow-caption">Click on an album to reveal the details</h4>
+            <img
+              id="img-map"
+              src="files/img/ImgMap.jpg"
+              alt="A representation of all albums in one picture "
+              usemap="#image-map"
+            />
+
+            <figcaption class="fig-caption-font">
+              Fig 6 - Pink Floyds popular albums
+            </figcaption>
+          </figure>
+
+          <map name="image-map">
+            <area
+              target="album_content"
+              alt="Atom Heart Mother"
+              title="Atom Heart Mother"
+              href="files/album_pages/atom-heart-mother.html"
+              coords="19,17,140,297"
+              shape="rect"
+            />
+            <area
+              target="album_content"
+              alt="Relics"
+              title="Relics"
+              href="files/album_pages/relics.html"
+              coords="148,18,271,300"
+              shape="rect"
+            />
+            <area
+              target="album_content"
+              alt="The Dark Side of the Moon"
+              title="The Dark Side of the Moon"
+              href="files/album_pages/dark-side-of-the-moon.html"
+              coords="274,19,391,298"
+              shape="rect"
+            />
+            <area
+              target="album_content"
+              alt="Wish You Were Here"
+              title="Wish You Were Here"
+              href="files/album_pages/wish-you-were-here.html"
+              coords="395,12,518,304"
+              shape="rect"
+            />
+            <area
+              target="album_content"
+              alt="The Wall"
+              title="The Wall"
+              href="files/album_pages/the-wall.html"
+              coords="525,15,640,306"
+              shape="rect"
+            />
+            <area
+              target="album_content"
+              alt="Animals"
+              title="Animals"
+              href="files/album_pages/animals.html"
+              coords="641,17,782,311"
+              shape="rect"
+            />
+          </map>
+
+          <iframe
+            id="album_content"
+            name="album_content"
+            title="description"
+            src="files/album_pages/atom-heart-mother.html"
+          ></iframe>
+        </section>
+      </div>
+
+      <!-- Videos-->
+      <div id="section4" class="page-section">
+        <section class="center-frame">
+          <h2 class="section-title">Videos</h2>
+          <section class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/y-E7_VHLvkE"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/eEqPX-Z833Y"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/cM65nXMr7Xc"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/5lsiN2t_LmU"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
         </section>
       </div>
 
       <!-- Contact-->
-      <div id="section4" class="pageSection">
+      <div id="section5" class="page-section">
         <section class="center-frame">
-          <h1 class="fat">Contact</h1>
+          <h2 class="section-title">Contact</h2>
+          <section class="contact-container">
+            <form method="POST" action="index.html" class="contact-form">
+              <label class="form-labels" for="name">Your name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+
+              <label class="form-labels" for="email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email adress"
+                required
+              />
+
+              <label class="form-labels" for="message">Message</label>
+              <textarea
+                class="form-input"
+                name="message"
+                id="message"
+                required
+                placeholder="Enter message here"
+              ></textarea>
+              <input id="submit" type="submit" class="form-input" />
+            </form>
+
+            <section class="social-media">
+              <a
+                href="https://www.facebook.com/trajko05"
+                rel="noreferrer noopener“
+                target="_blank"
+                class="social-media-item"
+              >
+                <img
+                  class="social-media-logo"
+                  src="files/img/fb-logo.png"
+                  alt="Facebook"
+                />
+                Pink Floyd Music
+              </a>
+
+              <a
+                href="https://www.instagram.com/davidgilmour/"
+                class="social-media-item"
+                rel="noreferrer noopener“
+                target="_blank"
+                ><img
+                  class="social-media-logo"
+                  src="files/img/insta-logo.png"
+                  alt="Instagram logo"
+                />
+                David Gilmour</a
+              >
+
+              <a
+                href="https://twitter.com/pinkfloyd"
+                class="social-media-item"
+                rel="noreferrer noopener“
+                target="_blank"
+                ><img
+                  class="social-media-logo"
+                  src="files/img/twitter-logo.png"
+                  alt="Twitter logo"
+                />
+                Pink Floyd Twitter</a
+              >
+            </section>
+          </section>
         </section>
       </div>
 
-      <footer>
-        <small>
-          <time></time>
-        </small>
+      <footer id="footer" class="page-section">
+        <small> &#169;PepijnVDK </small>
       </footer>
     </main>
 
